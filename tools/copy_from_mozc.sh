@@ -40,11 +40,13 @@ pushd_ `dirname $0`/..
     cp $SRC/android/AndroidManifest.xml $DST
     cp $SRC/android/project.properties $DST
     cp -r $SRC/android/assets $DST
-    cp -r $SRC/android/gen_for_adt $DST
     cp -r $SRC/android/libs $DST
     cp -r $SRC/android/res $DST
     mkdir -p $DST/src/org/mozc
     cp -r $SRC/android/src/com/google/android $DST/src/org/mozc
+    cp -r $SRC/android/gen_for_adt/org $DST/src
+
+    # protobuf
     cp $SRC/android/protobuf/bin/classes.jar $DST/libs/protobuf.jar
 
     # resources_oss
@@ -58,6 +60,5 @@ pushd_ `dirname $0`/..
     cp $SRC/build_tools/__init__.py $DST/tools/build_tools
     cp $SRC/build_tools/util.py $DST/tools/build_tools
     cp $SRC/android/gen_mozc_drawable.py $DST/tools
-
 
 popd_
