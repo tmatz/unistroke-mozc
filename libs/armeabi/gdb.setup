@@ -1,0 +1,2 @@
+set solib-search-path android/obj/local/armeabi
+directory /home/matsuda/Develop/mozc/android-ndk-r8e/platforms/android-14/arch-arm/usr/include /home/matsuda/Develop/mozc/android-ndk-r8e/sources/cxx-stl/stlport/stlport /home/matsuda/Develop/mozc/android-ndk-r8e/sources/cxx-stl//gabi++/include .
