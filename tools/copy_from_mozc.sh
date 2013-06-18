@@ -40,7 +40,6 @@ pushd_ `dirname $0`/..
     cp $SRC/android/AndroidManifest.xml $DST
     cp $SRC/android/project.properties $DST
     sed -i 's/\(^proguard.config=\)/#\1/' $DST/project.properties
-    sed -i 's/\(^android.library.reference.2=protobuf\)/#\1/' $DST/project.properties
     cp -r $SRC/android/assets $DST
     cp -r $SRC/android/libs $DST
     cp -r $SRC/android/res $DST
@@ -49,7 +48,9 @@ pushd_ `dirname $0`/..
     cp -r $SRC/android/gen_for_adt/org $DST/src
 
     # protobuf
-    cp $SRC/android/protobuf/bin/classes.jar $DST/libs/protobuf.jar
+    mkdir -p $DST/protobuf/src
+    cp -r $SRC/protobuf/files/java/src/main/java/com $DST/protobuf/src
+    cp -r $SRC/android/protobuf/gen_for_adt/com $DST/protobuf/src
 
     # resources_oss
     mkdir -p $DST/resources_oss
