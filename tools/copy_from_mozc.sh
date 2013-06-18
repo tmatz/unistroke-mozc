@@ -39,6 +39,8 @@ pushd_ `dirname $0`/..
     # .
     cp $SRC/android/AndroidManifest.xml $DST
     cp $SRC/android/project.properties $DST
+    sed -i 's/\(^proguard.config=\)/#\1/' $DST/project.properties
+    sed -i 's/\(^android.library.reference.2=protobuf\)/#\1/' $DST/project.properties
     cp -r $SRC/android/assets $DST
     cp -r $SRC/android/libs $DST
     cp -r $SRC/android/res $DST
