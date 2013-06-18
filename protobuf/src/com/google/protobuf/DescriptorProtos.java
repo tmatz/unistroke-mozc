@@ -7854,7 +7854,7 @@ public final class DescriptorProtos {
         return com.google.protobuf.DescriptorProtos.FieldDescriptorProto.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final Type[] VALUES = values();
+      private static final Type[] sVALUES = values();
 
       public static Type valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -7862,7 +7862,7 @@ public final class DescriptorProtos {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -7961,7 +7961,7 @@ public final class DescriptorProtos {
         return com.google.protobuf.DescriptorProtos.FieldDescriptorProto.getDescriptor().getEnumTypes().get(1);
       }
 
-      private static final Label[] VALUES = values();
+      private static final Label[] sVALUES = values();
 
       public static Label valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -7969,7 +7969,7 @@ public final class DescriptorProtos {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -13807,7 +13807,7 @@ public final class DescriptorProtos {
         return com.google.protobuf.DescriptorProtos.FileOptions.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final OptimizeMode[] VALUES = values();
+      private static final OptimizeMode[] sVALUES = values();
 
       public static OptimizeMode valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -13815,7 +13815,7 @@ public final class DescriptorProtos {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -17335,7 +17335,7 @@ public final class DescriptorProtos {
         return com.google.protobuf.DescriptorProtos.FieldOptions.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final CType[] VALUES = values();
+      private static final CType[] sVALUES = values();
 
       public static CType valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -17343,7 +17343,7 @@ public final class DescriptorProtos {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
