@@ -49,8 +49,11 @@ pushd_ `dirname $0`/..
 
     # protobuf
     mkdir -p $DST/protobuf/src
+    cp $SRC/android/protobuf/AndroidManifest.xml $DST/protobuf
+    cp $SRC/android/protobuf/project.properties $DST/protobuf
     cp -r $SRC/protobuf/files/java/src/main/java/com $DST/protobuf/src
     cp -r $SRC/android/protobuf/gen_for_adt/com $DST/protobuf/src
+    mkdir -p $DST/protobuf/res
 
     # resources_oss
     mkdir -p $DST/resources_oss
