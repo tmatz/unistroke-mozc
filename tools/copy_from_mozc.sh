@@ -40,6 +40,8 @@ pushd_ `dirname $0`/..
     cp $SRC/android/AndroidManifest.xml $DST
     cp $SRC/android/project.properties $DST
     sed -i 's/\(^proguard.config=\)/#\1/' $DST/project.properties
+    sed -i 's/\(^android.library.reference.1=resources_oss\)/#\1/' $DST/project.properties
+    sed -i 's/\(^android.library.reference.2=protobuf\)/android.library.reference.1=protobuf/' $DST/project.properties
     cp -r $SRC/android/assets $DST
     cp -r $SRC/android/libs $DST
     cp -r $SRC/android/res $DST
@@ -56,15 +58,17 @@ pushd_ `dirname $0`/..
     mkdir -p $DST/protobuf/res
 
     # resources_oss
-    mkdir -p $DST/resources_oss
-    cp $SRC/android/resources_oss/AndroidManifest.xml $DST/resources_oss
-    cp $SRC/android/resources_oss/project.properties $DST/resources_oss
-    cp -r $SRC/android/resources_oss/res $DST/resources_oss
-    cp -r $SRC/android/resources_oss/src $DST/resources_oss
+#    mkdir -p $DST/resources_oss
+#    cp $SRC/android/resources_oss/AndroidManifest.xml $DST/resources_oss
+#    cp $SRC/android/resources_oss/project.properties $DST/resources_oss
+    cp -r $SRC/android/resources_oss/res $DST
+    cp -r $SRC/android/resources_oss/src $DST
 
     # tools
     cp $SRC/build_tools/__init__.py $DST/tools/build_tools
     cp $SRC/build_tools/util.py $DST/tools/build_tools
     cp $SRC/android/gen_mozc_drawable.py $DST/tools
+
+    find $DST/src -name \*.java -exec sed -i 's/org.mozc.android.inputmethod.japanese.resources.R/org.mozc.android.inputmethod.japanese.R/' {} \;
 
 popd_

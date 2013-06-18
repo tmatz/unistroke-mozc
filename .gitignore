@@ -1,2 +1,14 @@
 *.pyc
 *.swp
+out
+gen
+bin
+.idea
+*.iml
+ant.properties
+local.properties
+build.xml
+proguard-project.txt
+/libs/armeabi/gdbserver
+/libs/armeabi/gdb.setup
+/protobuf/res/*

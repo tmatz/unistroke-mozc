@@ -57,7 +57,7 @@ import org.mozc.android.inputmethod.japanese.protobuf.ProtoCommands.SessionComma
 import org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config;
 import org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.SelectionShortcut;
 import org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.SessionKeymap;
-import org.mozc.android.inputmethod.japanese.resources.R;
+import org.mozc.android.inputmethod.japanese.R;
 import org.mozc.android.inputmethod.japanese.session.SessionExecutor;
 import org.mozc.android.inputmethod.japanese.session.SessionHandlerFactory;
 import org.mozc.android.inputmethod.japanese.session.SessionExecutor.EvaluationCallback;

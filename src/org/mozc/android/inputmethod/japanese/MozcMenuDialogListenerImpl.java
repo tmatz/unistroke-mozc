@@ -32,7 +32,7 @@ package org.mozc.android.inputmethod.japanese;
 import org.mozc.android.inputmethod.japanese.mushroom.MushroomUtil;
 import org.mozc.android.inputmethod.japanese.preference.MozcBasePreferenceActivity;
 import org.mozc.android.inputmethod.japanese.preference.MozcClassicPreferenceActivity;
-import org.mozc.android.inputmethod.japanese.resources.R;
+import org.mozc.android.inputmethod.japanese.R;
 import org.mozc.android.inputmethod.japanese.ui.MenuDialog.MenuDialogListener;
 
 import android.content.Context;
