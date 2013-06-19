@@ -150,7 +150,7 @@ STYLE_CATEGORY_MAP = sorted(
 # Format of StateListDrawable:
 # 2, [[state_list], drawable]
 COLOR_PATTERN = re.compile(r'#([0-9A-Fa-f]{6})')
-PIXEL_PATTERN = re.compile(r'(\d+)px')
+PIXEL_PATTERN = re.compile(r'(\d+)(px)?')
 FLOAT_PATTERN = re.compile(r'^\s*,?\s*([+-]?\d+(?:\.\d*)?(:?e[+-]\d+)?)')
 SHADER_PATTERN = re.compile(r'url\(#(.*)\)')
 MATRIX_PATTERN = re.compile(r'matrix\((.*)\)')
