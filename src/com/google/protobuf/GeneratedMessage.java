@@ -63,7 +63,7 @@ public abstract class GeneratedMessage extends AbstractMessage
    * field builders for nested messages until they are requested. By disabling
    * this optimization, existing tests can be reused to test the field builders.
    */
-  protected static boolean alwaysUseFieldBuilders = false;
+  public static boolean alwaysUseFieldBuilders = false;
 
   protected GeneratedMessage() {
   }

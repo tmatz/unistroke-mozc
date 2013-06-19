@@ -74,7 +74,7 @@ final class FieldSet<FieldDescriptorType extends
 
   /** Construct a new FieldSet. */
   private FieldSet() {
-    this.fields = SmallSortedMap.newFieldMap(16);
+    this.fields = SmallSortedMap.<FieldDescriptorType>newFieldMap(16);
   }
 
   /**
@@ -82,7 +82,7 @@ final class FieldSet<FieldDescriptorType extends
    * DEFAULT_INSTANCE.
    */
   private FieldSet(final boolean dummy) {
-    this.fields = SmallSortedMap.newFieldMap(0);
+    this.fields = SmallSortedMap.<FieldDescriptorType>newFieldMap(0);
     makeImmutable();
   }
 
@@ -160,7 +160,7 @@ final class FieldSet<FieldDescriptorType extends
   public Map<FieldDescriptorType, Object> getAllFields() {
     if (hasLazyField) {
       SmallSortedMap<FieldDescriptorType, Object> result =
-          SmallSortedMap.newFieldMap(16);
+          SmallSortedMap.<FieldDescriptorType>newFieldMap(16);
       for (int i = 0; i < fields.getNumArrayEntries(); i++) {
         cloneFieldEntry(result, fields.getArrayEntryAt(i));
       }
