@@ -1057,7 +1057,7 @@ public final class ProtoUserDictionaryStorage {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoUserDictionaryStorage.UserDictionary.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final PosType[] VALUES = values();
+      private static final PosType[] sVALUES = values();
 
       public static PosType valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -1065,7 +1065,7 @@ public final class ProtoUserDictionaryStorage {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -3665,7 +3665,7 @@ public final class ProtoUserDictionaryStorage {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoUserDictionaryStorage.UserDictionaryStorage.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final StorageType[] VALUES = values();
+      private static final StorageType[] sVALUES = values();
 
       public static StorageType valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -3673,7 +3673,7 @@ public final class ProtoUserDictionaryStorage {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -5212,7 +5212,7 @@ public final class ProtoUserDictionaryStorage {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoUserDictionaryStorage.UserDictionaryCommand.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final CommandType[] VALUES = values();
+      private static final CommandType[] sVALUES = values();
 
       public static CommandType valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -5220,7 +5220,7 @@ public final class ProtoUserDictionaryStorage {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -6844,7 +6844,7 @@ public final class ProtoUserDictionaryStorage {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoUserDictionaryStorage.UserDictionaryCommandStatus.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final Status[] VALUES = values();
+      private static final Status[] sVALUES = values();
 
       public static Status valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -6852,7 +6852,7 @@ public final class ProtoUserDictionaryStorage {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;

@@ -3360,7 +3360,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final PreeditMethod[] VALUES = values();
+      private static final PreeditMethod[] sVALUES = values();
 
       public static PreeditMethod valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -3368,7 +3368,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -3498,7 +3498,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.getDescriptor().getEnumTypes().get(1);
       }
 
-      private static final SessionKeymap[] VALUES = values();
+      private static final SessionKeymap[] sVALUES = values();
 
       public static SessionKeymap valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -3506,7 +3506,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -3598,7 +3598,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.getDescriptor().getEnumTypes().get(2);
       }
 
-      private static final PunctuationMethod[] VALUES = values();
+      private static final PunctuationMethod[] sVALUES = values();
 
       public static PunctuationMethod valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -3606,7 +3606,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -3698,7 +3698,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.getDescriptor().getEnumTypes().get(3);
       }
 
-      private static final SymbolMethod[] VALUES = values();
+      private static final SymbolMethod[] sVALUES = values();
 
       public static SymbolMethod valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -3706,7 +3706,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -3813,7 +3813,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.getDescriptor().getEnumTypes().get(4);
       }
 
-      private static final FundamentalCharacterForm[] VALUES = values();
+      private static final FundamentalCharacterForm[] sVALUES = values();
 
       public static FundamentalCharacterForm valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -3821,7 +3821,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -3908,7 +3908,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.getDescriptor().getEnumTypes().get(5);
       }
 
-      private static final HistoryLearningLevel[] VALUES = values();
+      private static final HistoryLearningLevel[] sVALUES = values();
 
       public static HistoryLearningLevel valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -3916,7 +3916,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -3999,7 +3999,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.getDescriptor().getEnumTypes().get(6);
       }
 
-      private static final SelectionShortcut[] VALUES = values();
+      private static final SelectionShortcut[] sVALUES = values();
 
       public static SelectionShortcut valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -4007,7 +4007,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -4103,7 +4103,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.getDescriptor().getEnumTypes().get(7);
       }
 
-      private static final CharacterForm[] VALUES = values();
+      private static final CharacterForm[] sVALUES = values();
 
       public static CharacterForm valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -4111,7 +4111,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -4222,7 +4222,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.getDescriptor().getEnumTypes().get(8);
       }
 
-      private static final ShiftKeyModeSwitch[] VALUES = values();
+      private static final ShiftKeyModeSwitch[] sVALUES = values();
 
       public static ShiftKeyModeSwitch valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -4230,7 +4230,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -4322,7 +4322,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.getDescriptor().getEnumTypes().get(9);
       }
 
-      private static final NumpadCharacterForm[] VALUES = values();
+      private static final NumpadCharacterForm[] sVALUES = values();
 
       public static NumpadCharacterForm valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -4330,7 +4330,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -4431,7 +4431,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.getDescriptor().getEnumTypes().get(10);
       }
 
-      private static final AutoConversionKey[] VALUES = values();
+      private static final AutoConversionKey[] sVALUES = values();
 
       public static AutoConversionKey valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -4439,7 +4439,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -4517,7 +4517,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.getDescriptor().getEnumTypes().get(11);
       }
 
-      private static final YenSignCharacter[] VALUES = values();
+      private static final YenSignCharacter[] sVALUES = values();
 
       public static YenSignCharacter valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -4525,7 +4525,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -5662,7 +5662,7 @@ public final class ProtoConfig {
             return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.Config.InformationListConfig.WebServiceEntry.getDescriptor().getEnumTypes().get(0);
           }
 
-          private static final FormatType[] VALUES = values();
+          private static final FormatType[] sVALUES = values();
 
           public static FormatType valueOf(
               com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -5670,7 +5670,7 @@ public final class ProtoConfig {
               throw new java.lang.IllegalArgumentException(
                 "EnumValueDescriptor is not for this type.");
             }
-            return VALUES[desc.getIndex()];
+            return sVALUES[desc.getIndex()];
           }
 
           private final int index;
@@ -14039,7 +14039,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.HangulConfig.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final KeyboardTypes[] VALUES = values();
+      private static final KeyboardTypes[] sVALUES = values();
 
       public static KeyboardTypes valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -14047,7 +14047,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -14977,7 +14977,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.ChewingConfig.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final KeyboardType[] VALUES = values();
+      private static final KeyboardType[] sVALUES = values();
 
       public static KeyboardType valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -14985,7 +14985,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -15113,7 +15113,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.ChewingConfig.getDescriptor().getEnumTypes().get(1);
       }
 
-      private static final SelectionKeys[] VALUES = values();
+      private static final SelectionKeys[] sVALUES = values();
 
       public static SelectionKeys valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -15121,7 +15121,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -15195,7 +15195,7 @@ public final class ProtoConfig {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoConfig.ChewingConfig.getDescriptor().getEnumTypes().get(2);
       }
 
-      private static final HsuSelectionKeys[] VALUES = values();
+      private static final HsuSelectionKeys[] sVALUES = values();
 
       public static HsuSelectionKeys valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -15203,7 +15203,7 @@ public final class ProtoConfig {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
