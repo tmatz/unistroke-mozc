@@ -41,26 +41,25 @@ pushd_ `dirname $0`/..
     cp $SRC/android/project.properties $DST
     sed -i 's/\(^proguard.config=\)/#\1/' $DST/project.properties
     sed -i 's/\(^android.library.reference.1=resources_oss\)/#\1/' $DST/project.properties
-    sed -i 's/\(^android.library.reference.2=protobuf\)/android.library.reference.1=protobuf/' $DST/project.properties
+    sed -i 's/\(^android.library.reference.2=protobuf\)/#\1/' $DST/project.properties
     cp -r $SRC/android/assets $DST
     cp -r $SRC/android/libs $DST
     cp -r $SRC/android/res $DST
     mkdir -p $DST/src/org/mozc
     cp -r $SRC/android/src/com/google/android $DST/src/org/mozc
     cp -r $SRC/android/gen_for_adt/org $DST/src
+    rm -r $DST/src/org/mozc/android/inputmethod/japanese/protobuf
 
     # protobuf
-    mkdir -p $DST/protobuf/src
+    mkdir -p $DST/protobuf/src/org/mozc/android/inputmethod/japanese
     cp $SRC/android/protobuf/AndroidManifest.xml $DST/protobuf
     cp $SRC/android/protobuf/project.properties $DST/protobuf
     cp -r $SRC/protobuf/files/java/src/main/java/com $DST/protobuf/src
     cp -r $SRC/android/protobuf/gen_for_adt/com $DST/protobuf/src
+    cp -r $SRC/android/gen_for_adt/org/mozc/android/inputmethod/japanese/protobuf $DST/protobuf/src/org/mozc/android/inputmethod/japanese
     mkdir -p $DST/protobuf/res
 
     # resources_oss
-#    mkdir -p $DST/resources_oss
-#    cp $SRC/android/resources_oss/AndroidManifest.xml $DST/resources_oss
-#    cp $SRC/android/resources_oss/project.properties $DST/resources_oss
     cp -r $SRC/android/resources_oss/res $DST
     cp -r $SRC/android/resources_oss/src $DST
 
@@ -68,6 +67,10 @@ pushd_ `dirname $0`/..
     cp $SRC/build_tools/__init__.py $DST/tools/build_tools
     cp $SRC/build_tools/util.py $DST/tools/build_tools
     cp $SRC/android/gen_mozc_drawable.py $DST/tools
+
+    # data
+    mkdir -p $DST/data/images
+    cp -r $SRC/data/images/android/svg $DST/data/images
 
     find $DST/src -name \*.java -exec sed -i 's/org.mozc.android.inputmethod.japanese.resources.R/org.mozc.android.inputmethod.japanese.R/' {} \;
 

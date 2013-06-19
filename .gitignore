@@ -4,6 +4,8 @@ out
 gen
 bin
 .idea
+.classpath
+.project
 *.iml
 ant.properties
 local.properties
