@@ -58,6 +58,7 @@ import android.os.HandlerThread;
 import android.os.Looper;
 import android.os.Message;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.EnumSet;
 import java.util.List;
@@ -267,7 +268,7 @@ public class SessionExecutor {
      * A set of CommandType which don't need session id.
      */
     private static final Set<CommandType> SESSION_INDEPENDENT_COMMAND_TYPE_SET =
-        Collections.unmodifiableSet(EnumSet.of(
+        Collections.unmodifiableSet(EnumSet.copyOf(Arrays.asList(new CommandType[]{
             CommandType.SET_CONFIG,
             CommandType.GET_CONFIG,
             CommandType.SET_IMPOSED_CONFIG,
@@ -277,7 +278,7 @@ public class SessionExecutor {
             CommandType.CLEAR_STORAGE,
             CommandType.READ_ALL_FROM_STORAGE,
             CommandType.RELOAD,
-            CommandType.SEND_USER_DICTIONARY_COMMAND));
+            CommandType.SEND_USER_DICTIONARY_COMMAND})));
 
     private final SessionHandler sessionHandler;
 
