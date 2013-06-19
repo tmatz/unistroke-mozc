@@ -99,7 +99,7 @@ public final class ProtoCandidates {
       return org.mozc.android.inputmethod.japanese.protobuf.ProtoCandidates.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final Category[] VALUES = values();
+    private static final Category[] sVALUES = values();
 
     public static Category valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -107,7 +107,7 @@ public final class ProtoCandidates {
         throw new java.lang.IllegalArgumentException(
           "EnumValueDescriptor is not for this type.");
       }
-      return VALUES[desc.getIndex()];
+      return sVALUES[desc.getIndex()];
     }
 
     private final int index;
@@ -186,7 +186,7 @@ public final class ProtoCandidates {
       return org.mozc.android.inputmethod.japanese.protobuf.ProtoCandidates.getDescriptor().getEnumTypes().get(1);
     }
 
-    private static final DisplayType[] VALUES = values();
+    private static final DisplayType[] sVALUES = values();
 
     public static DisplayType valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -194,7 +194,7 @@ public final class ProtoCandidates {
         throw new java.lang.IllegalArgumentException(
           "EnumValueDescriptor is not for this type.");
       }
-      return VALUES[desc.getIndex()];
+      return sVALUES[desc.getIndex()];
     }
 
     private final int index;
@@ -8026,7 +8026,7 @@ public final class ProtoCandidates {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoCandidates.Candidates.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final Direction[] VALUES = values();
+      private static final Direction[] sVALUES = values();
 
       public static Direction valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -8034,7 +8034,7 @@ public final class ProtoCandidates {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
@@ -8128,7 +8128,7 @@ public final class ProtoCandidates {
         return org.mozc.android.inputmethod.japanese.protobuf.ProtoCandidates.Candidates.getDescriptor().getEnumTypes().get(1);
       }
 
-      private static final CandidateWindowLocation[] VALUES = values();
+      private static final CandidateWindowLocation[] sVALUES = values();
 
       public static CandidateWindowLocation valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
@@ -8136,7 +8136,7 @@ public final class ProtoCandidates {
           throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
-        return VALUES[desc.getIndex()];
+        return sVALUES[desc.getIndex()];
       }
 
       private final int index;
